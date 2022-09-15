@@ -1,0 +1,7 @@
+<div class="mr-2">
+  <button class="btn btn-sm btn-primary" *ngIf="showPrev" (click)="handlePrev()">Prev <<</button>
+  <span class="buttons" *ngFor="let btnNumber of buttonNumbers">
+  <button class="btn btn-sm btn-primary btns">{{btnNumber}}</button>
+  </span>
+  <button class="btn btn-sm btn-primary" *ngIf="showNext" (click)="handleNext();">Next >></button>
+</div>
